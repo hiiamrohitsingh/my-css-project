@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Star Animation</title>
+   <style>
+      body {
+         width: 100vw;
+         height: 100vh;
+         margin: 0;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .container {
+         width: 90%;
+         height: 95%;
+         background-color: aliceblue;
+         animation-name: container;
+         animation-duration: 30s;
+         animation-timing-function: ease-in;
+         animation-delay: 05.ms;
+         position: relative;
+      }
+
+      .container .box {
+         width: 100px;
+         height: 100px;
+         background-color: blueviolet;
+         transition: all;
+         animation-name: box;
+         animation-duration: 30s;
+         animation-timing-function: ease-in;
+         animation-delay: 05.ms;
+      }
+
+      @keyframes container {
+         0% {
+            background-color: aliceblue;
+         }
+
+         10% {
+            background-color: aquamarine;
+         }
+
+         20% {
+            background-color: brown;
+         }
+
+         30% {
+            background-color: blue;
+         }
+
+         40% {
+            background-color: cadetblue;
+         }
+
+         50% {
+            background-color: cornflowerblue;
+         }
+
+         60% {
+            background-color: darkblue;
+         }
+
+         70% {
+            background-color: darkorange;
+         }
+
+         80% {
+            background-color: firebrick;
+         }
+
+         90% {
+            background-color: fuchsia;
+         }
+
+         100% {
+            background-color: gold;
+         }
+      }
+
+      @keyframes box {
+         0% {
+            transform: rotate(0deg);
+            background-color: blueviolet;
+            border-radius: 0%;
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+
+         1% {
+            transform: rotate(36deg);
+            background-color: aqua;
+            border-radius: 5%;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+         }
+
+         20% {
+            transform: rotate(72deg);
+            background-color: darkorange;
+            border-radius: 10%;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+         }
+
+         30% {
+            transform: rotate(108deg);
+            background-color: plum;
+            border-radius: 15%;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+         }
+
+         40% {
+            transform: rotate(144deg);
+            background-color: chartreuse;
+            border-radius: 20%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+         }
+
+         50% {
+            transform: rotate(180deg);
+            background-color: blue;
+            border-radius: 25%;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+         }
+
+         60% {
+            transform: rotate(216deg);
+            background-color: white;
+            border-radius: 30%;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+         }
+
+         70% {
+            transform: rotate(252deg);
+            background-color: black;
+            border-radius: 35%;
+            position: absolute;
+            top: 35%;
+            left: 35%;
+         }
+
+         80% {
+            transform: rotate(288deg);
+            background-color: gold;
+            border-radius: 40%;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+         }
+
+         90% {
+            transform: rotate(324deg);
+            background-color: salmon;
+            border-radius: 45%;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+         }
+
+         100% {
+            transform: rotate(360deg);
+            background-color: darkblue;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="box"></div>
+   </div>
+
+</body>
+
+</html>
